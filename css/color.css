@@ -1,0 +1,31 @@
+
+
+
+/*Background colours, shades of grey light to dark from 1 to 5*/
+
+.bg-1{
+	background-color: #F0F0F0;
+}
+
+.bg-2{
+	background-color: #D0D0D0;
+}
+
+.bg-3{
+	background-color: #B0B0B0;
+}
+
+.bg-4{
+	background-color: #787878;
+}
+
+.bg-5{
+	background-color: #202020;
+}
+
+/*text colours*/
+
+.white{
+	color: #fff;
+}
+
