@@ -34,6 +34,12 @@ html{
 	margin: 0 auto;
 }
 
+.margin-auto{
+	display: block;
+	width: initial;
+	margin: 0 auto;
+}
+
 
 /*fake field box*/
 
