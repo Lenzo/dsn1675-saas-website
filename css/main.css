@@ -2,6 +2,41 @@ html{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.cards-logo{
+	max-width: 10em;
+}
+
+
+/*utilities*/
+
+	/* 
+		s-hide: visually hides things on small screen up to 25em;
+		l-wrap: max-width of 60em to wrap things after l breakpoint;
+	*/
+
+@media only screen and (max-width: 25em){
+
+	.s-hide{
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		border: 0;
+		clip: rect(0 0 0 0);
+	}
+
+}
+
+.l-wrap{
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+
+/*fake field box*/
+
 .field{
 	display: inline-block;
 	background-color: #fff;
@@ -21,34 +56,10 @@ html{
 
 
 
-.cards-logo{
-	max-width: 10em;
-}
 
-
-@media only screen and (max-width: 25em){
-
-
-	.s-hide{
-		height: 1px;
-		margin: -1px;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		width: 1px;
-		border: 0;
-		clip: rect(0 0 0 0);
-	}
-
-
-}
  
 
 
 
 
 
-.l-wrap{
-	max-width: 60rem;
-	margin: 0 auto;
-}
