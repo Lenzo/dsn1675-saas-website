@@ -5,13 +5,50 @@ html{
 .field{
 	display: inline-block;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 8px;
 	color: grey;
 	text-align: center;
-	padding: 0;
-	margin: 0;
+	padding: 0.375em 0.75em 0.42em;
+	margin: 1rem;
 }
+
+@media only screen and (min-width: 60em){
+	.field{
+		margin: 0;
+	}
+}
+
+
+
 
 .cards-logo{
 	max-width: 10em;
+}
+
+
+@media only screen and (max-width: 25em){
+
+
+	.s-hide{
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		border: 0;
+		clip: rect(0 0 0 0);
+	}
+
+
+}
+ 
+
+
+
+
+
+.l-wrap{
+	max-width: 60rem;
+	margin: 0 auto;
 }
