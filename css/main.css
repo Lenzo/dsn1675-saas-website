@@ -12,6 +12,7 @@ html{
 	/* 
 		s-hide: visually hides things on small screen up to 25em;
 		l-wrap: max-width of 60em to wrap things after l breakpoint;
+		margin-auto: Centers horizontally;
 	*/
 
 @media only screen and (max-width: 25em){
@@ -30,16 +31,17 @@ html{
 }
 
 .l-wrap{
-	max-width: 60rem;
+	max-width: 90rem;
 	margin: 0 auto;
 }
+
+/*margin-auto*/
 
 .margin-auto{
 	display: block;
-	width: initial;
-	margin: 0 auto;
+	margin-left:auto;
+	margin-right:auto;
 }
-
 
 /*fake field box*/
 

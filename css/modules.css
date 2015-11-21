@@ -116,6 +116,10 @@ svg {
   padding-top: 75%; /* Traditional TV/computer screens */
 }
 
+.embed--2by1 {
+  padding-top: 50%; /*custom*/
+}
+
 .embed--iso216 {
   padding-top: 70.92%; /* A-standard paper sizes */
 }
