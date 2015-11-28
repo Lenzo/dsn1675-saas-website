@@ -6,6 +6,15 @@ html{
 	max-width: 10em;
 }
 
+.banner{
+	background-image: url("../images/pattern.svg");
+	background-size: 70px;
+	background-repeat: repeat;
+	background-color: #a02526;
+}
+
+
+
 
 /*utilities*/
 
@@ -31,7 +40,7 @@ html{
 }
 
 .l-wrap{
-	max-width: 90rem;
+	max-width: 60rem;
 	margin: 0 auto;
 }
 

@@ -1,4 +1,62 @@
+/*
+light red #cd4b45
+dark red #a02526
+light green #22ba94
+dark green #1d5548
+yellow #e6b159
+smoke #eee*/
 
+/*Background brand colours*/
+
+.bg-l-red{
+	background-color: #cd4b45;
+}
+
+.bg-d-red{
+	background-color: #a02526
+}
+
+.bg-l-green{
+	background-color: #22ba94;
+}
+
+.bg-d-green{
+	background-color: #1d5548;
+}
+
+.bg-yellow{
+	background-color: #e6b159;
+}
+
+.bg-smoke{
+	background-color: #eee;
+}
+
+/*Text brand colours*/
+
+.l-red{
+	color: #cd4b45;
+}
+
+.d-red{
+	color: #a02526
+}
+
+.l-green{
+	color: #22ba94;
+}
+
+.d-green{
+	color: #1d5548;
+}
+
+.yellow{
+	color: #e6b159;
+}
+
+.smoke{
+	color: #eee;
+}
 
 
 /*Background colours, shades of grey light to dark from 1 to 5*/
@@ -27,6 +85,10 @@
 
 .white{
 	color: #fff;
+}
+
+.black{
+	color: #000;
 }
 
 .current{
