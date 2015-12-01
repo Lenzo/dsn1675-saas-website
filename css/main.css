@@ -42,6 +42,7 @@ html{
 
 /*l-wrap*/
 .l-wrap{
+	width: 60;
 	max-width: 60rem;
 	margin: 0 auto;
 }
@@ -76,7 +77,11 @@ html{
 	}
 }
 
+/*feature box on tour page*/
 
+.feature{
+	width: 60rem;
+}
 
 
 
