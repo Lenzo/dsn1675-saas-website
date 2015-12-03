@@ -8,9 +8,21 @@ html{
 
 .banner{
 	background-image: url("../images/pattern.svg");
-	background-size: 70px;
+	background-size: 150px;
 	background-repeat: repeat;
 	background-color: #a02526;
+}
+
+.bg-pattern-yellow{
+	background-image: url("../images/pattern-yellow.svg");
+	background-size: 150px;
+	background-repeat: repeat;
+}
+
+.bg-pattern-green{
+	background-image: url("../images/pattern-green.svg");
+	background-size: 200px;
+	background-repeat: repeat;
 }
 
 
