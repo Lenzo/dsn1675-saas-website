@@ -1,5 +1,5 @@
 html{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .cards-logo{
@@ -54,9 +54,14 @@ html{
 
 /*l-wrap*/
 .l-wrap{
-	width: 60;
-	max-width: 60rem;
+	display: block;
+	max-width: 50rem;
 	margin: 0 auto;
+}
+
+/*m-wrap*/
+.m-wrap{
+	max-width: 30rem;
 }
 
 /*margin-auto*/
@@ -93,6 +98,19 @@ html{
 
 .feature{
 	width: 60rem;
+	height: 20rem;
+}
+
+/*buckets on index*/
+
+.bucket{
+	min-height: 20em;
+}
+
+@media only screen and (min-width: 60em){
+	.bucket{
+		margin: 3rem;
+	}
 }
 
 

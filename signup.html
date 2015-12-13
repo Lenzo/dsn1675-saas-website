@@ -6,6 +6,7 @@
 	<meta name="handheldfriendly" content="true">
 	<meta name="mobileoptimized" content="240">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/grid.css" rel="stylesheet">
   	<link href="css/modules.css" rel="stylesheet">
 	<link href="css/grids.css" rel="stylesheet">
@@ -35,10 +36,11 @@
 	</div>	
 </header>
 
-<main class="grid">
+<main class="grid bg-pattern-yellow">
 
+<!-- Plan Description -->
 	<div class="l-wrap">
-		<div class="unit xs-1 s-1 m-1 l-1-2">
+		<div class="unit xs-1 s-1 m-1 l-1-2 bg-smoke island-1-2 push push-r">
 			<section class="grid">
 					<h1 class="unit xs-1 s-1 m-1 l-1 tera">Become a Head-Chef</h1>
 					<ul class="unit  xs-1 s-1 m-1 l-1 list-group">
@@ -50,78 +52,98 @@
 			</section>
 		</div>
 
-		<div class="unit xs-1 s-1 m-1 l-1-2">
-			<form class="grid" method="post" action="">
+<!-- Sign Up Form -->
+		<div class="unit xs-1 s-1 m-1 l-1-2 bg-smoke island-1-2 push">
+			<form class="grid gutter" method="post" action="">
+				<fieldset class="unit">
+					<legend>Card Type</legend>
+					<input id="master-card" type="radio" name="card-type">
+					<label for="master-card">Mastercard</label>
+					<input id="visa" type="radio" name="card-type">
+					<label for="visa">Visa</label>
+					<input id="american-express" type="radio" name="card-type">
+					<label for="american-express">American Express</label>
+				</fieldset>
+				<div class="unit xs-1 s-1 m-1 l-1">
+					<label for="name" name="name">Cardholder Name</label>
+					<input class="push" id="name" name="name">
+				</div>
+
 				<div class="unit xs-1 s-1 m-1 l-1">
 					<label for="card-number">Card Number</label>
-					<input type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
+					<input class="push" type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
 				</div>
-				<div class="unit xs-1 s-1 m-1-2 l-1-2">
-					<label for="month">Expiry Date</label>
-					<select id="month" required>
-						<option value default="default" selected="selected">Month</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-					</select>
-				</div>
-				<div class="unit xs-1 s-1 m-1-2 l-1-2">
-					<label for="year">Year</label>
-						<select id="year">
-						<option value default="default" selected="selected">Year</option>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-						<option>20</option>
-						<option>21</option>
-						<option>22</option>
-						<option>23</option>
-						<option>24</option>
-						<option>25</option>
-						<option>26</option>
-						<option>27</option>
-						<option>28</option>
-						<option>29</option>
-						<option>30</option>
-						<option>31</option>
-						<option>32</option>
-						<option>33</option>
-						<option>34</option>
-						<option>35</option>
-						<option>36</option>
-						<option>37</option>
-						<option>38</option>
-						<option>39</option>
-						<option>40</option>
-						<option>41</option>
-						<option>42</option>
-						<option>43</option>
-						<option>44</option>
-						<option>45</option>
-					</select>
-				</div>
+
+				<fieldset class="unit xs-1 s-1 m-1 l-1">
+					<legend>Expiry Date</legend>
+					<div class="grid">
+						<div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+							<label for="month" class="visually-hidden">Month</label>
+							<select id="month" required>
+								<option value default="default" selected="selected">Month</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+						</div>
+						<div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+							<label for="year" class="visually-hidden">Year</label>
+								<select id="year">
+								<option value default="default" selected="selected">Year</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+								<option>32</option>
+								<option>33</option>
+								<option>34</option>
+								<option>35</option>
+								<option>36</option>
+								<option>37</option>
+								<option>38</option>
+								<option>39</option>
+								<option>40</option>
+								<option>41</option>
+								<option>42</option>
+								<option>43</option>
+								<option>44</option>
+								<option>45</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
 				<div class="unit xs-1 s-1 m-1-2 l-1-2">
 					<label required>Security code</label>
-					<input inputmode="numeric" maxlength="3">
+					<input class="push" inputmode="numeric" maxlength="3">
 				</div>
 				<div class="unit xs-1 s-1 m-1-2 l-1-2">
 					<label required>Postal code</label>
-					<input>
+					<input class="push" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
 				</div>
-				<button class="btn" type="submit">Submit</button>
+				<button class="btn push" type="submit">Submit</button>
 				<p class="unit xs-1 s-1 m-1 l-1">You hereby authorise CARDS to charge you automatically every month until you cancel your subscription. If you don't cancel your subscription before the offer ends, you will automatically be charged the standard price every month until you cancel.</p>
-
 			</form>
 		</div>
 	</div>

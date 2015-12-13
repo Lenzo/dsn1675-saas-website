@@ -223,6 +223,11 @@ svg {
   width: 64px;
 }
 
+.i--90 {
+  height: 90px;
+  width: 90px;
+}
+
 .icon svg {
   left: 0;
   height: 100%;
