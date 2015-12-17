@@ -122,8 +122,6 @@ html{
 
 .header{
 	font-weight: 700;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 @media only screen and (min-width: 25em){
@@ -145,6 +143,41 @@ html{
 	}
 }
 
+
+
+/*form styling*/
+
+form{
+	border: solid 10px #eee;
+}
+
+input{
+	box-shadow: inset 0px 0px 0px 0px;
+}
+
+.text-input{
+	background-color: #eee;
+	width: 100%;
+}
+
+.radio-input{
+	display: inline-block;
+}
+
+@media only screen and (max-width: 25em){
+	.radio-input{
+		display: block;
+	}
+}
+
+select{
+	width: 100%;
+	background-color: #eee;
+}
+
+fieldset{
+	border: solid 1px #eee;
+}
 
 
 

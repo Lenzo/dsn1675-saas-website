@@ -36,7 +36,7 @@
 	</div>	
 </header>
 
-<main class="grid bg-pattern-yellow">
+<main class="grid">
 
 <!-- Plan Description -->
 	<div class="l-wrap">
@@ -52,27 +52,33 @@
 			</section>
 		</div>
 
-<!-- Sign Up Form -->
-		<div class="unit xs-1 s-1 m-1 l-1-2 bg-smoke island-1-2 push">
+<!-- Payment Option Up Form -->
+		<div class="unit xs-1 s-1 m-1 l-1 bg-white island-1-2 push">
 			<form class="grid gutter-1-2" method="post" action="">
-				<h1 class="unit xs-1 s-1 m-1 l-1">Payment Options</h1>
+				<h1 class="unit xs-1 s-1 m-1 l-1 tera normal text-center pad-t">Payment Options</h1>
 				<fieldset class="unit xs-1 s-1 m-1 l-1">
 					<legend>Card Type</legend>
-					<input id="master-card" type="radio" name="card-type">
-					<label for="master-card">Mastercard</label>
-					<input id="visa" type="radio" name="card-type">
-					<label for="visa">Visa</label>
-					<input id="american-express" type="radio" name="card-type">
-					<label for="american-express">American Express</label>
+					<div class="radio-input">
+						<input id="master-card" type="radio" name="card-type">
+						<label for="master-card">Mastercard</label>
+					</div>
+					<div class="radio-input">
+						<input id="visa" type="radio" name="card-type">
+						<label for="visa">Visa</label>
+					</div>
+					<div class="radio-input">
+						<input id="american-express" type="radio" name="card-type">
+						<label for="american-express">American Express</label>
+					</div>
 				</fieldset>
 				<div class="unit xs-1 s-1 m-1 l-1">
 					<label for="name" name="name">Cardholder Name</label>
-					<input class="push" id="name" name="name">
+					<input class="push text-input" id="name" name="name">
 				</div>
 
 				<div class="unit xs-1 s-1 m-1 l-1">
 					<label for="card-number">Card Number</label>
-					<input class="push" type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
+					<input class="push text-input" type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
 				</div>
 
 				<fieldset class="unit xs-1 s-1 m-1 l-1">
@@ -135,16 +141,16 @@
 						</div>
 					</div>
 				</fieldset>
-				<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
 					<label required>Security code</label>
-					<input class="push" inputmode="numeric" maxlength="3">
+					<input class="push text-input" inputmode="numeric" maxlength="3">
 				</div>
-				<div class="unit xs-1 s-1 m-1-2 l-1-2">
+				<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
 					<label required>Postal code</label>
-					<input class="push" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
+					<input class="push text-input" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
 				</div>
 				<p class="unit xs-1 s-1 m-1 l-1 milli">You hereby authorise CARDS to charge you automatically every month until you cancel your subscription. If you don't cancel your subscription before the offer ends, you will automatically be charged the standard price every month until you cancel.</p>
-				<button class="btn push" type="submit">Submit</button>
+				<button class="btn push unit xs-1 text-center" type="submit">Submit</button>
 			</form>
 		</div>
 	</div>
