@@ -13,7 +13,7 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/color.css" rel="stylesheet">
 </head>
-<body class="bg-pattern-yellow">
+<body class="">
 
 <ul class="skip-links">
 	<li><a href="#main">Skip to main content</a></li>
@@ -24,7 +24,9 @@
 <header class="bg-yellow gutter pad-b-1-2 pad-t-1-2" role="masthead">
 	<div class="grid grid-middle">
 		<div class="unit  xs-1-4 s-1-4 m-1-4 l-1-4">
-			<a class="current" href="index.html"><img class="icon i--90" src="images/logo.svg" alt=""></a>
+			<div class="embed embed--4by1">
+				<a href="index.html"><img class="embed__item" src="images/logo-reversed.svg" alt=""></a>
+			</div>
 		</div>
 		<nav class="unit xs-3-4 s-3-4 m-3-4 l-3-4" id="nav" role="navigation">
 			<ol class="list-group list-group--inline pad-t-1-2 push-none text-right">
@@ -50,8 +52,8 @@
 				</div>
 				<div class="unit xs-1 s-1 m-1 l-1-3">
 					<div class="grid" id="main">
-						<div class="unit xs-1 s-1 m-1 l-1">
-							<a class="btn btn--light push-2" href="signup.html">SIGN UP</a>
+						<div class="unit unit-xs-centered xs-1 s-1 m-1 l-1">
+							<a class="btn btn--light push-2 d-green" href="signup.html">SIGN UP</a>
 						</div>
 					</div>
 				</div>	
@@ -61,25 +63,29 @@
 
 <!-- buckets -->
 	<section class="grid l-wrap">
-		<div class="unit xs-1 s-1 m-1-2 l-1-2 text-center bg-smoke bucket">
-			<p class="pad-t tera">What can<span class="block">CHEFFER</span>do for you?</p>
-			<a class="btn push bg-d-green" href="tour.html">TAKE THE TOUR</a>
+		<div class="unit xs-1 s-1 m-1-2 l-1-2 text-center">
+			<div class="bg-smoke bucket bucket--left">	
+				<p class="pad-t tera">What can<span class="block">CHEFFER</span>do for you?</p>
+				<a class="btn push bg-d-green" href="tour.html">TAKE THE TOUR</a>
+			</div>		
 		</div>
-		<div class="unit xs-1 s-1 m-1-2 l-1-2 text-center bg-d-green bucket">
-			<p class="pad-t white tera">What kind of<span class="block">Chef are you?</span></p>
-			<a class="btn push bg-l-green" href="plans.html">VIEW PLANS</a>
+		<div class="unit xs-1 s-1 m-1-2 l-1-2 text-center">
+			<div class="bg-l-green bucket">
+				<p class="pad-t white tera">What kind of<span class="block">Chef are you?</span></p>
+				<a class="btn push bg-d-green" href="plans.html">VIEW PLANS</a>
+			</div>
 		</div>
 	</section>
 
 <!-- prefooter -->
-	<section class="bg-d-red island" id="signup-bucket" role="complementary">
-		<div class="grid grid-middle push l-wrap">
+	<section class="bg-d-green island-2 bucket" id="signup-bucket" role="complementary">
+		<div class="grid grid-middle push-2 l-wrap">
 			<div class="unit xs-1 s-1 m-1-2 l-1-2 ">
-				<h2 class="push-0 giga smoke">GET COOKING</h2>
-				<p class="push-1-2">Sign up is easy and free!</p>
+				<h2 class="push-0 exa smoke">GET COOKING</h2>
+				<p class="push-1-2 giga white">Sign up is easy and free!</p>
 			</div>
-			<div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
-				<a class="btn btn--light" href="signup.html">SIGN UP FREE</a>
+			<div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2 text-center">
+				<a class="btn btn--light d-green" href="signup.html">SIGN UP FREE</a>
 			</div>
 		</div>
 	</section>
@@ -88,8 +94,8 @@
 
 <footer class="bg-yellow">
 	<div class="grid">
-		<div class="unit unit-xs-centered">
-			<a href="index.html"><img class="icon i--90" src="images/logo.svg" alt="back to top"></a>
+		<div class="unit text-center xs-1 island">
+			<a href="index.html"><img class="icon i--64 img-flex" src="images/logo-icon-reversed.svg" alt="back to top"></a>
 		</div>
 		<aside class="unit xs-1 bg-l-yellow text-center micro">© 2015 CARDS. All rights reserved. A Bunce Designed product.</aside>
 	</div>

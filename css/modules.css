@@ -407,7 +407,10 @@ svg {
   border: 0;
   color: #fff;
   text-decoration: none;
+  width: 15rem;
+  text-align: center;
 }
+
 
 .btn:hover {
   background-color: #000;
@@ -420,7 +423,7 @@ svg {
 }
 
 .btn--light:hover {
-  background-color: #666;
+  background-color: #e6b159;
   color: #fff;
 }
 

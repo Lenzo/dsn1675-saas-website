@@ -96,21 +96,34 @@ html{
 
 /*feature box on tour page*/
 
-.feature{
-	width: 60rem;
-	height: 20rem;
+@media only screen and (min-width: 60em){
+	.feature{
+		width: 60rem;
+		height: 20rem;
+	}
 }
+
+
 
 /*buckets on index*/
 
 .bucket{
-	min-height: 20em;
+	min-height: 20rem;
 }
 
 @media only screen and (min-width: 60em){
 	.bucket{
-		margin: 3rem;
+		margin-bottom: 3rem;
+		margin-top: 3rem;
 	}
+
+	.bucket--left{
+		margin-right: 1.5rem;
+	}
+}
+
+.prefooter{
+	min-height: 20rem;
 }
 
 
