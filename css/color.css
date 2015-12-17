@@ -99,3 +99,17 @@ smoke #eee*/
 	color: #787878
 }
 
+/*Background Patterns*/
+
+.bg-pattern-yellow{
+	background-image: url("../images/pattern-yellow.svg");
+	background-size: 150px;
+	background-repeat: repeat;
+}
+
+.bg-pattern-green{
+	background-image: url("../images/pattern-green.svg");
+	background-size: 200px;
+	background-repeat: repeat;
+}
+

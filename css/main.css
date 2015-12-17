@@ -1,32 +1,13 @@
+/*
+SIZES
+@media only screen and (min-width: 25em) 
+@media only screen and (min-width: 38em)
+@media only screen and (min-width: 60em)
+*/
+
 html{
 	font-family: 'Poppins', sans-serif;
 }
-
-.cards-logo{
-	max-width: 10em;
-}
-
-.banner{
-	background-image: url("../images/pattern.svg");
-	background-size: 150px;
-	background-repeat: repeat;
-	background-color: #a02526;
-}
-
-.bg-pattern-yellow{
-	background-image: url("../images/pattern-yellow.svg");
-	background-size: 150px;
-	background-repeat: repeat;
-}
-
-.bg-pattern-green{
-	background-image: url("../images/pattern-green.svg");
-	background-size: 200px;
-	background-repeat: repeat;
-}
-
-
-
 
 /*utilities*/
 
@@ -76,6 +57,7 @@ html{
 
 
 
+
 /*fake field box*/
 
 .field{
@@ -94,18 +76,19 @@ html{
 	}
 }
 
-/*feature box on tour page*/
 
-@media only screen and (min-width: 60em){
-	.feature{
-		width: 60rem;
-		height: 20rem;
-	}
+/*SPECIFIC CLASS STYLES*/
+
+/*hero banner on homepage*/
+
+.banner{
+	background-image: url("../images/pattern.svg");
+	background-size: 150px;
+	background-repeat: repeat;
+	background-color: #a02526;
 }
 
-
-
-/*buckets on index*/
+/*buckets on homepage*/
 
 .bucket{
 	min-height: 20rem;
@@ -113,7 +96,7 @@ html{
 
 @media only screen and (min-width: 60em){
 	.bucket{
-		margin-bottom: 3rem;
+		margin-bottom: 0rem;
 		margin-top: 3rem;
 	}
 
@@ -125,6 +108,43 @@ html{
 .prefooter{
 	min-height: 20rem;
 }
+
+/*feature box on tour page*/
+
+@media only screen and (min-width: 60em){
+	.feature{
+		width: 60rem;
+		height: 20rem;
+	}
+}
+
+/* header banners */
+
+.header{
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media only screen and (min-width: 25em){
+	.header{
+		height: 5rem;
+	}
+}
+
+
+@media only screen and (min-width: 38em){
+	.header{
+		height: 7rem;
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.header{
+		height: 10rem;
+	}
+}
+
 
 
 
