@@ -183,12 +183,23 @@ input{
 	}
 }
 
-select{
+.select{
 	width: 100%;
 	background-color: #eee;
+	border: solid 1px #eee;
+}
+
+.select-light{
+	width: 100%;
+	background-color: #fff;
+	border: solid 1px #eee;
 }
 
 fieldset{
+	border: 0px;
+}
+
+.fieldset{
 	border: solid 1px #eee;
 }
 

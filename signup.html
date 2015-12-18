@@ -21,16 +21,19 @@
 	<li><a href="#nav">Skip to navigation</a></li>
 </ul>
 
+<!-- nav -->
 <header class="bg-yellow gutter pad-b-1-2 pad-t-1-2" role="masthead">
 	<div class="grid grid-middle">
-		<div class="unit s-1-4 m-1-4 l-1-4">
-			<a href="index.html"><img class="icon i--32" src="images/logo-white.svg" alt=""></a>
+		<div class="unit  xs-1-4 s-1-4 m-1-4 l-1-4">
+			<div class="embed embed--4by1">
+				<a href="index.html"><img class="embed__item" src="images/logo-reversed.svg" alt=""></a>
+			</div>
 		</div>
-		<nav class="unit s-3-4 m-3-4 l-3-4">
+		<nav class="unit xs-3-4 s-3-4 m-3-4 l-3-4" id="nav" role="navigation">
 			<ol class="list-group list-group--inline pad-t-1-2 push-none text-right">
 				<li><a class="icon-link white island-1-2" href="tour.html">TOUR</a></li>
 				<li><a class="icon-link white island-1-2" href="plans.html">PLANS</a></li>
-				<li><a class="icon-link white island-1-2 current" href="signup.html"  aria-label="Submit email">SIGN UP</a></li>
+				<li><a class="icon-link white island-1-2 s-hide" href="signup.html">SIGN UP</a></li>
 			</ol>
 		</nav>
 	</div>	
@@ -38,157 +41,190 @@
 
 <main class="grid">
 
-<!-- Plan Description -->
-	<div class="l-wrap">
-		<div class="unit xs-1 s-1 m-1 l-1-2 bg-smoke island-1-2 push push-r">
-			<section class="grid">
-					<h1 class="unit xs-1 s-1 m-1 l-1 tera">Become a Head-Chef</h1>
-					<ul class="unit  xs-1 s-1 m-1 l-1 list-group">
-						<li>Explore, Pin, comment & rate users and cards</li>
-						<li>Unlimited public & private recipies</li>
-						<li>Follow & be followed</li>
-					</ul>
-					<a class="unit xs-1" href="plans.html">See More Plans</a>
-			</section>
-		</div>
+<!-- header -->
 
-		<div class="unit unit-xs-centered">
-				<form class="grid bg-smoke m-wrap">
-					<h1 class="unit xs-1 tera d-green text-center">PREMIUM CHEF PLAN</h1>
+	<div class="unit xs-1 s-1 m-1 l-1 text-center bg-d-green pad-t header push-2">
+		<p class="white tera push-0">BECOME A CHEF</p>
+	</div>
 
+
+
+<!-- Account Sign Up Form -->
+		<form class="unit xs-1 s-1 m-1 l-1 unit-xs-centered bg-smoke m-wrap">
+			<fieldset>
+				<legend class="unit xs-1 tera d-green text-center island">Premium Chef Account</legend>
+				<div class="grid">
 					<div class="unit xs-1 s-1 m-1 l-1">
 						<label for="user-name">USER NAME</label>
-						<input class="push text-input bg-white" type="text" id="user-name">
+						<input class="push text-input bg-white" type="text" id="user-name" required>
 					</div>
 
 					<div class="unit xs-1 s-1 m-1 l-1">
 						<label for="email">EMAIL</label>
-						<input class="push text-input bg-white" type="email" id="email" placeholder="your@email.com">
+						<input class="push text-input bg-white" type="email" id="email" placeholder="your@email.com" required>
 					</div>
 
 					<div class="unit xs-1 s-1 m-1 l-1">
 						<label for="password">PASSWORD</label>
-						<input class="push text-input bg-white" type="password" id="password">
+						<input class="push text-input bg-white" type="password" id="password" required>
 					</div>
 
 					<div class="unit xs-1 s-1 m-1 l-1">
 						<label for="confirm-password">CONFIRM PASSWORD</label>
-						<input class="push text-input bg-white" type="password" id="confirm-password">
+						<input class="push text-input bg-white" type="password" id="confirm-password" required>
 					</div>
 
-				</form>
+					<div class="unit xs-1 s-1 m-1 l-1 push">
+						<label for="plan">SELECT PLAN</label>
+						<select id="plan" class="select-light" required>
+							<option class="bg-white" value default="default" selected="selected">HEAD CHEF/$5 Monthly</option>
+							<option>SOUS CHEF/$3 Monthly</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			
+
+<!-- Payment Option Form -->
+			<div class="bg-white">
+				<fieldset class="unit xs-1 s-1 m-1 l-1 bg-white push-0">
+					<legend class="unit xs-1 s-1 m-1 l-1 tera normal text-center d-green island bg-white">Payment Options</legend>
+					<div class="grid gutter-1-2" method="post" action="">
+						<fieldset class="unit xs-1 s-1 m-1 l-1 fieldset">
+							<legend>Card Type</legend>
+							<div class="radio-input">
+								<input id="master-card" type="radio" name="card-type">
+								<label for="master-card">Mastercard</label>
+							</div>
+							<div class="radio-input">
+								<input id="visa" type="radio" name="card-type">
+								<label for="visa">Visa</label>
+							</div>
+							<div class="radio-input">
+								<input id="american-express" type="radio" name="card-type">
+								<label for="american-express">American Express</label>
+							</div>
+						</fieldset>
+						<div class="unit xs-1 s-1 m-1 l-1">
+							<label for="name" name="name">Cardholder Name</label>
+							<input class="push text-input" id="name" name="name">
+						</div>
+
+						<div class="unit xs-1 s-1 m-1 l-1">
+							<label for="card-number">Card Number</label>
+							<input class="push text-input" type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
+						</div>
+
+						<fieldset class="unit xs-1 s-1 m-1 l-1 fieldset">
+							<legend>Expiry Date</legend>
+							<div class="grid">
+								<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+									<label for="month" class="visually-hidden">Month</label>
+									<select class="select" id="month" required>
+										<option value default="default" selected="selected">Month</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									</select>
+								</div>
+								<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 gutter-1-2">
+									<label for="year" class="visually-hidden">Year</label>
+										<select id="year" class="select">
+										<option value default="default" selected="selected">Year</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+										<option>31</option>
+										<option>32</option>
+										<option>33</option>
+										<option>34</option>
+										<option>35</option>
+										<option>36</option>
+										<option>37</option>
+										<option>38</option>
+										<option>39</option>
+										<option>40</option>
+										<option>41</option>
+										<option>42</option>
+										<option>43</option>
+										<option>44</option>
+										<option>45</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+						<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
+							<label required>Security code</label>
+							<input class="push text-input" inputmode="numeric" maxlength="3">
+						</div>
+						<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
+							<label required>Postal code</label>
+							<input class="push text-input" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
+						</div>
+						<p class="unit xs-1 s-1 m-1 l-1 milli">You hereby authorise CHEFFER<sup>©</sup> to charge you automatically every month until you cancel your subscription. If you don't cancel your subscription before the offer ends, you will automatically be charged the standard price every month until you cancel.</p>
+				</feildset>
 			</div>
-
-<!-- Payment Option Up Form -->
-		<div class="unit xs-1 s-1 m-1 l-1 bg-white push">
-			<form class="grid gutter-1-2 m-wrap" method="post" action="">
-				<h1 class="unit xs-1 s-1 m-1 l-1 tera normal text-center pad-t">Payment Options</h1>
-				<fieldset class="unit xs-1 s-1 m-1 l-1">
-					<legend>Card Type</legend>
-					<div class="radio-input">
-						<input id="master-card" type="radio" name="card-type">
-						<label for="master-card">Mastercard</label>
-					</div>
-					<div class="radio-input">
-						<input id="visa" type="radio" name="card-type">
-						<label for="visa">Visa</label>
-					</div>
-					<div class="radio-input">
-						<input id="american-express" type="radio" name="card-type">
-						<label for="american-express">American Express</label>
-					</div>
-				</fieldset>
-				<div class="unit xs-1 s-1 m-1 l-1">
-					<label for="name" name="name">Cardholder Name</label>
-					<input class="push text-input" id="name" name="name">
-				</div>
-
-				<div class="unit xs-1 s-1 m-1 l-1">
-					<label for="card-number">Card Number</label>
-					<input class="push text-input" type="text" id="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" required>
-				</div>
-
-				<fieldset class="unit xs-1 s-1 m-1 l-1">
-					<legend>Expiry Date</legend>
-					<div class="grid">
-						<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-							<label for="month" class="visually-hidden">Month</label>
-							<select id="month" required>
-								<option value default="default" selected="selected">Month</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-								<option>6</option>
-								<option>7</option>
-								<option>8</option>
-								<option>9</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
-							</select>
-						</div>
-						<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-							<label for="year" class="visually-hidden">Year</label>
-								<select id="year">
-								<option value default="default" selected="selected">Year</option>
-								<option>15</option>
-								<option>16</option>
-								<option>17</option>
-								<option>18</option>
-								<option>19</option>
-								<option>20</option>
-								<option>21</option>
-								<option>22</option>
-								<option>23</option>
-								<option>24</option>
-								<option>25</option>
-								<option>26</option>
-								<option>27</option>
-								<option>28</option>
-								<option>29</option>
-								<option>30</option>
-								<option>31</option>
-								<option>32</option>
-								<option>33</option>
-								<option>34</option>
-								<option>35</option>
-								<option>36</option>
-								<option>37</option>
-								<option>38</option>
-								<option>39</option>
-								<option>40</option>
-								<option>41</option>
-								<option>42</option>
-								<option>43</option>
-								<option>44</option>
-								<option>45</option>
-							</select>
-						</div>
-					</div>
-				</fieldset>
-				<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
-					<label required>Security code</label>
-					<input class="push text-input" inputmode="numeric" maxlength="3">
-				</div>
-				<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
-					<label required>Postal code</label>
-					<input class="push text-input" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
-				</div>
-				<p class="unit xs-1 s-1 m-1 l-1 milli">You hereby authorise CHEFFER<sup>©</sup> to charge you automatically every month until you cancel your subscription. If you don't cancel your subscription before the offer ends, you will automatically be charged the standard price every month until you cancel.</p>
-				<button class="btn push unit xs-1 text-center" type="submit">Submit</button>
-			</form>
+			<div class="unit xs-1 s-1 m-1 l-1 text-center">
+				<button class="bg-d-green btn push unit xs-1 text-center" type="submit">GET COOKING</button>
+			</div>
 		</div>
-	</div>
-<a href="free-signup.html" class="btn unit">free signup</a>
+	</form>
+	
+
+
+
+	<!-- FAQs -->
+	<section class="grid island-1-2 bg-smoke">
+		<h2 class="unit unit-xs-1 gutter pad-t yotta d-green">FAQs</h2>
+		<div class="unit xs-1 s-1 m-1 l-1-2 gutter">
+			<h3 class="giga normal">How do I upgrade?</h3>
+			<p>Upgrading from a free or premium membership is easily done at anytime during your subcription right from the dashboard of your CARDS app. Simply click the upgrade button under the settings panel and choose the new plan you would like to upgrade to.</p>
+		</div>
+		<div class="unit xs-1 s-1 m-1 l-1-2 gutter">
+			<h3 class="giga normal">How do monthly subscriptions work?</h3>
+			<p>We only require monthly commitments at a time. Your subscription is automatically renewed after one month, unless you cancel before the next scheduled billing date. Should your subscription be cancelled, you will automatically be downgraded to the free account. Your personally made content content will still be accessable to you.</p>
+		</div>
+		<div class="unit xs-1 s-1 m-1 l-1-2 gutter">
+			<h3 class="giga normal">Can I cancel at any time?</h3>
+			<p>Plans can be cancelled at anytime in from the dashboard of your CARDS app. Under settings, click cancel subscription.</p>
+		</div>
+		<div class="unit xs-1 s-1 m-1 l-1-2 gutter push">
+			<h3 class="giga normal">Is my data secure and private?</h3>
+			<p>Yes, your data is safe. Collected data is yours and is never used or shared in any way shape or form.</p>
+		</div>
+	</section>
+
+
 </main>
 
-<footer class="bg-yellow island" role="complementary">
+<footer class="bg-yellow">
 	<div class="grid">
-		<div class="unit unit-xs-centered">
-			<a href="index.html"><img class="icon i--32" src="images/logo-white.svg" alt=""></a>
+		<div class="unit text-center xs-1 island">
+			<a href="index.html"><img class="icon i--48 img-flex" src="images/logo-icon-reversed.svg" alt="back to top"></a>
 		</div>
+		<aside class="unit xs-1 bg-l-yellow island-1-2 text-center micro">© 2015 CARDS. All rights reserved. A Bunce Designed product.</aside>
 	</div>
 </footer>
   
