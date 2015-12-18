@@ -88,6 +88,41 @@ html{
 	background-color: #a02526;
 }
 
+
+
+
+
+/* header banners */
+
+.header{
+	font-weight: 700;
+	padding: .5rem;
+}
+
+
+
+@media only screen and (min-width: 25em){
+	.header{
+		padding: 1rem;
+	}
+}
+
+
+@media only screen and (min-width: 38em){
+	.header{
+		padding: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.header{
+		padding: 2rem;
+	}
+}
+
+
+
+
 /*buckets on homepage*/
 
 .bucket{
@@ -109,37 +144,15 @@ html{
 	min-height: 20rem;
 }
 
+
+
+
 /*feature box on tour page*/
 
 @media only screen and (min-width: 60em){
 	.feature{
 		width: 60rem;
 		height: 20rem;
-	}
-}
-
-/* header banners */
-
-.header{
-	font-weight: 700;
-}
-
-@media only screen and (min-width: 25em){
-	.header{
-		height: 5rem;
-	}
-}
-
-
-@media only screen and (min-width: 38em){
-	.header{
-		height: 7rem;
-	}
-}
-
-@media only screen and (min-width: 60em){
-	.header{
-		height: 10rem;
 	}
 }
 
