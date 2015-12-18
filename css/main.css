@@ -131,7 +131,7 @@ html{
 
 @media only screen and (min-width: 60em){
 	.bucket{
-		margin-bottom: 0rem;
+		margin-bottom: 3rem;
 		margin-top: 3rem;
 	}
 
@@ -141,7 +141,8 @@ html{
 }
 
 .prefooter{
-	min-height: 20rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 
@@ -149,10 +150,15 @@ html{
 
 /*feature box on tour page*/
 
+
+.feature{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 @media only screen and (min-width: 60em){
 	.feature{
 		width: 60rem;
-		height: 20rem;
 	}
 }
 
