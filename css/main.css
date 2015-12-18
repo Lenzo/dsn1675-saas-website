@@ -43,7 +43,23 @@ html{
 /*m-wrap*/
 .m-wrap{
 	max-width: 30rem;
+	display: block;
+	margin: 0 auto;
 }
+
+.s-wrap{
+	max-width: 25rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.xs-wrap{
+	max-width: 15rem;
+	display: block;
+	margin: 0 auto;
+}
+
+
 
 /*margin-auto*/
 .margin-auto{
@@ -210,6 +226,11 @@ fieldset{
 }
 
 
+/*links*/
+
+a{
+	color: #1d5548;
+}
 
  
 
