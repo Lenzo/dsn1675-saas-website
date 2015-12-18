@@ -15,12 +15,18 @@
 </head>
 
 <body>
+
+<ul class="skip-links">
+	<li><a href="#nav">Skip to navigation</a></li>
+	<li><a href="#main">Skip to main content</a></li>
+</ul>
+
 <!-- nav -->
-<header class="bg-yellow gutter pad-b-1-2 pad-t-1-2" role="masthead">
+<header class="bg-yellow gutter pad-b-1-2 pad-t-1-2">
 	<div class="grid grid-middle">
 		<div class="unit  xs-1-4 s-1-4 m-1-4 l-1-4">
 			<div class="embed embed--4by1">
-				<a href="index.html"><img class="embed__item" src="images/logo-reversed.svg" alt=""></a>
+				<a href="index.html" aria-label="Back to Homepage"><img class="embed__item" src="images/logo-reversed.svg" alt=""></a>
 			</div>
 		</div>
 		<nav class="unit xs-3-4 s-3-4 m-3-4 l-3-4" id="nav" role="navigation">
@@ -33,9 +39,9 @@
 	</div>	
 </header>
 
-	<main class="grid">
+	<main class="grid" role="main" id="main">
 	
-			<div class="unit xs-1 s-1 m-1 l-1 text-center bg-d-red pad-t header push-2">
+			<div class="unit xs-1 s-1 m-1 l-1 text-center bg-d-red pad-t header push-2" role="banner">
 				<p class="white tera push-0">SIGN UP FOR FREE</p>
 			</div>
 
@@ -69,15 +75,15 @@
 				</form>
 			</div>
 
-			<p class="unit xs-1 s-1 m-1 l-1 text-center"><a href="signup.html">Upgrade your plan</a> at any time.</p> 
+			<p class="unit xs-1 s-1 m-1 l-1 text-center"><a href="signup.html" aria-label="Go to Premium Sign up Page">Upgrade your plan</a> at any time.</p> 
 	</main>
 
 	<footer class="bg-yellow">
 		<div class="grid">
 			<div class="unit text-center xs-1 island">
-				<a href="index.html"><img class="icon i--48 img-flex" src="images/logo-icon-reversed.svg" alt="back to top"></a>
+				<a href="index.html" aria-label="Back to Top"><img class="icon i--48 img-flex" src="images/logo-icon-reversed.svg" alt="back to top"></a>
 			</div>
-			<aside class="unit xs-1 bg-l-yellow island-1-2 text-center micro">© 2015 CARDS. All rights reserved. A Bunce Designed product.</aside>
+			<aside class="unit xs-1 bg-l-yellow island-1-2 text-center micro" role="contentinfo">© 2015 CARDS. All rights reserved. A Bunce Designed product.</aside>
 		</div>
 	</footer>
   
