@@ -76,9 +76,9 @@
 
 					<div class="unit xs-1 s-1 m-1 l-1 push">
 						<label for="plan">SELECT PLAN</label>
-						<select id="plan" class="select-light" required>
-							<option class="bg-white" selected="selected">HEAD CHEF/$5 Monthly</option>
-							<option>SOUS CHEF/$3 Monthly</option>
+						<select id="plan" class="select-light">
+							<option class="bg-white" value="head-chef">HEAD CHEF/$5 Monthly</option>
+							<option value="sous-chef">SOUS CHEF/$3 Monthly</option>
 						</select>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 			<div class="bg-white">
 				<fieldset class="unit xs-1 s-1 m-1 l-1 bg-white push-0">
 					<legend class="unit xs-1 s-1 m-1 l-1 tera normal text-center d-green island bg-white">Payment Options</legend>
-					<div class="grid gutter-1-2" method="post" action="">
+					<div class="grid gutter-1-2">
 						<fieldset class="unit xs-1 s-1 m-1 l-1 fieldset">
 							<legend>Card Type</legend>
 							<div class="radio-input">
@@ -106,8 +106,8 @@
 							</div>
 						</fieldset>
 						<div class="unit xs-1 s-1 m-1 l-1">
-							<label for="name" name="name">Cardholder Name</label>
-							<input class="push text-input" id="name" name="name">
+							<label for="cardholdername">Cardholder Name</label>
+							<input class="push text-input" id="cardholdername" name="name">
 						</div>
 
 						<div class="unit xs-1 s-1 m-1 l-1">
@@ -121,7 +121,7 @@
 								<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 gutter-1-2">
 									<label for="month" class="visually-hidden">Month</label>
 									<select class="select" id="month" required>
-										<option value default="default" selected="selected">Month</option>
+										<option value="">Month</option>
 										<option>1</option>
 										<option>2</option>
 										<option>3</option>
@@ -138,8 +138,8 @@
 								</div>
 								<div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 gutter-1-2">
 									<label for="year" class="visually-hidden">Year</label>
-										<select id="year" class="select">
-										<option value default="default" selected="selected">Year</option>
+										<select id="year" class="select" required>
+										<option value="">Year</option>
 										<option>15</option>
 										<option>16</option>
 										<option>17</option>
@@ -176,20 +176,20 @@
 							</div>
 						</fieldset>
 						<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
-							<label required>Security code</label>
-							<input class="push text-input" inputmode="numeric" maxlength="3">
+							<label>Security code</label>
+							<input class="push text-input" inputmode="numeric" maxlength="3" required>
 						</div>
 						<div class="unit xs-1 s-1-2 m-1-2 l-1-2">
-							<label required>Postal code</label>
-							<input class="push text-input" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code">
+							<label>Postal code</label>
+							<input class="push text-input" type="text" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" id="postal-code" required>
 						</div>
 						<p class="unit xs-1 s-1 m-1 l-1 milli">You hereby authorise CHEFFER<sup>©</sup> to charge you automatically every month until you cancel your subscription. If you don't cancel your subscription before the offer ends, you will automatically be charged the standard price every month until you cancel.</p>
-				</feildset>
+					</div>
+				</fieldset>
 			</div>
 			<div class="unit xs-1 s-1 m-1 l-1 text-center">
 				<button class="bg-d-green btn push unit xs-1 text-center" type="submit">GET COOKING</button>
 			</div>
-		</div>
 	</form>
 
 	<a class="unit xs-1 s-1 m-1 l-1 push text-center" href="free-signup.html">Sign up for a free cook account instead</a>
